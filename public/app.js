@@ -7,4 +7,6 @@ function something()
 	window.localStorage.setItem('bbb', x);
 
 	alert(x);
+
+	// переменная х сохраняется при переходе между окнами
 }
