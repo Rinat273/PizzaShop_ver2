@@ -8,10 +8,12 @@ set :database, {adapter: "sqlite3", database: "pizzashop.db"}   # создаем
 
 # создание модели
 class Product < ActiveRecord::Base
-  
+
 end
 
 get '/' do
+  @products = Product.all
+  
 	erb :index		
 end
 
