@@ -29,13 +29,13 @@ function add_to_cart(id)
 function update_orders_input()
 {
 	var orders = cart_get_orders();
-	$('#orders_input').val(orders);
+	$('#orders_input').val(orders); 		//  это из JQuery!!!!
 }
 
 function update_orders_button()
 {
 	var text = 'Cart (' + cart_get_number_of_items() + ')';
-	$('#orders_button').val(text);
+	$('#orders_button').val(text); 			//  это из JQuery!!!!
 }
 
 function cart_get_number_of_items()
